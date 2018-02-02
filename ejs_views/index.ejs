@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title><%= title %></title></head>
+    <body>
+        Course title (escaped): <%= title %> <br>
+        Course title (unescaped): <%- title %> <br>
+        <br>
+        Class roster
+        <ul>
+        <% for (const s of students) { %>
+            <li><%= s.name %> (<%= s.gpa %>)</li>
+        <% } %>
+        </ul>
+    </body>
+</html>
