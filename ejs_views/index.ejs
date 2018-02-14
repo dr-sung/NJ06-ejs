@@ -9,7 +9,21 @@
         <ul>
         <% for (const s of students) { %>
             <li><%= s.name %> (<%= s.gpa %>)</li>
-        <% } %>
+		<% } %>
+		
+		<% for (let i = 0; i < 5; i++) { %>
+			* <%= i %>
+		<% } %>
+<br>
+		Newline trim mode
+		<% for (let i = 0; i < 5; i++) { %>
+			** <%= i -%>
+		<% } %>
+<br>
+		white space trim mode
+		<% for (let i = 0; i < 5; i++) { %>
+			*** <%= i  _%>           ||
+		<% } %>
         </ul>
     </body>
 </html>
