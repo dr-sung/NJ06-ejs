@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 // set folder location of ejs files
 app.set('views', './ejs_views');
 
-app.locals.title = 'EJS demo1';
+app.locals.maintitle = 'EJS demo1';
 app.locals.date = new Date();
 
 // app.locals.title will be hidden

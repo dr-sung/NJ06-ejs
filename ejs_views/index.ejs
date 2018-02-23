@@ -2,6 +2,9 @@
 <html lang="en">
     <head><title><%= title %></title></head>
     <body>
+		"locals" implicit variable (maintitle): <%= locals.maintitle %> <br>
+		"locals" implicit variable (title): <%= locals.title %> <br>
+		"locals" implicit variable (students): <%= JSON.stringify(locals.students) %> <br>
         Course title (escaped): <%= title %> <br>
         Course title (unescaped): <%- title %> <br>
         <br>
